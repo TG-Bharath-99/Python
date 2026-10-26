@@ -1,0 +1,16 @@
+<h2>Welcome to Censex</h2>
+
+<a href="{% url 'employees' %}">View Employees</a>
+<br>
+<a href="{% url 'add' %}">Add</a>
+<br>
+<a href="#" onclick="go('update')">Update</a>
+<br>
+<a href="#" onclick="go('delete')">Delete</a>
+
+<script>
+function go(action) {
+    let id = prompt('Enter Employee ID');
+    if (id) location.href = '/' + action + '/' + id + '/';
+}
+</script>

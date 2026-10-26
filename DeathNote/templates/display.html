@@ -1,0 +1,9 @@
+<h2>Employee Details</h2>
+
+{% for e in emp_list %}
+Name: {{ e.name }}<br>
+EID: {{ e.eid }}<br>
+Address: {{ e.address }}<br>
+Salary: {{ e.salary }}<br>
+<hr>
+{% endfor %}

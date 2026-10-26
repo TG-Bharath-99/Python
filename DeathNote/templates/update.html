@@ -1,0 +1,9 @@
+<h1>Update Employee</h1>
+<form method="POST">
+{% csrf_token %}
+<input name="name" value="{{ e.name }}">
+<input name="eid" value="{{ e.eid }}">
+<input name="address" value="{{ e.address }}">
+<input name="salary" value="{{ e.salary }}">
+<button>Update</button>
+</form>
